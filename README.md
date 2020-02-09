@@ -8,10 +8,10 @@ apache
 Ansible galaxy:
 ---------------
 
-[https://galaxy.ansible.com/devops-toolbox.apache](https://galaxy.ansible.com/devops-toolbox.apache)
+[https://galaxy.ansible.com/devopstoolbox.apache](https://galaxy.ansible.com/devopstoolbox.apache)
 
 ```bash
-ansible-galaxy install devops-toolbox.apache
+ansible-galaxy install devopstoolbox.apache
 ```
 
 Requirements
@@ -49,7 +49,7 @@ Example Playbook
   tasks:
     - name: apache is configured
       import_role:
-        name: devops-toolbox.apache
+        name: devopstoolbox.apache
       vars:
         apache_enable_service: true
         apache_copy_templates: true
@@ -68,4 +68,4 @@ MIT
 Author Information
 ------------------
 
-- [Mihai Criveti](https://www.linkedin.com/in/devops-toolbox.)
+- [Mihai Criveti](https://www.linkedin.com/in/devopstoolbox.)
