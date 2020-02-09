@@ -1,0 +1,15 @@
+# Molecule managed
+---
+command:
+  configtest:
+    exit-status: 0
+    exec: "apachectl configtest 2>&1"
+    stdout:
+      - "/Syntax OK/"
+    stderr: []
+    timeout: 10000      # in milliseconds
+    skip: false
+port:
+  tcp:80:
+    listening: true
+    ip: []

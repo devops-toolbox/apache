@@ -1,0 +1,8 @@
+---
+# Install apache packages
+
+- name: packages are installed
+  package:
+    name: "{{ apache_packages_install }}"
+    state: present
+  become: true
